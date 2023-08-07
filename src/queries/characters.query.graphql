@@ -1,0 +1,23 @@
+query GetCharacters() {
+  characters(page: 2) {
+    __typename
+    results {
+      id
+      __typename
+      name
+      image
+      species
+      status
+      origin {
+        id
+        __typename
+        name
+      }
+      location {
+        id
+        __typename
+        name
+      }
+    }
+  }
+}
